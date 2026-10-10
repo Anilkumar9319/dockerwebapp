@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: anilkumar9319/javaweb:dbimage
+    image: anilkumar9319/javaweb:db
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: anilkumar9319/javaweb:appjava
+    image: anilkumar9319/javaweb:javaapp
     ports:
       - "1111:8080"
     deploy:
